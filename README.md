@@ -1,15 +1,26 @@
-#######################################
-### PROIECT UPB - STRUCTURI DE DATE ###
-#######################################
+# PROIECT UPB - STRUCTURI DE DATE
 
--- Compilare : make build --
--- Rulare : make run --
--- Vizualizare checker : ./checker.sh -- 
+## Compilare si rulare
 
-main.c = codul sursa al proiectului, ce include implementarea cerintelor
-checker.sh = scriptul de verificare automata
-makefile = regulile de compilare al programului
-date = directorul cu fisiere de intrare 
-rezulate = directorul cu fisiere de iesire corecte pentru verificare
-out = directorul generat de cod
+```bash
+make build       # compileaza
+make run         # ruleaza pe testul 1
+./checker.sh     # ruleaza toate testele
+```
 
+## Taskuri
+
+- **Task 1** - lista echipe + selectie pana la putere a lui 2
+- **Task 2** - simulare turneu cu coada de meciuri si stiva de castigatori
+- **Task 3** - top 8 echipe in BST, afisat descrescator dupa scor
+
+## Structura
+
+```
+main.c       - cod sursa
+Makefile     - compilare/rulare
+checker.sh   - verificare automata
+date/        - fisiere de intrare
+rezultate/   - fisiere de referinta
+out/         - output-uri generate
+```
